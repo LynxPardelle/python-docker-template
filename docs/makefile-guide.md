@@ -12,6 +12,20 @@ A Makefile is a build automation tool that:
 
 Instead of typing long Docker commands, you type short make commands!
 
+## 🪟 Windows Users: Use WSL for Best Experience
+
+**Recommended Setup for Windows:**
+1. Install WSL2: `wsl --install -d Ubuntu`
+2. Use WSL terminal for all make commands
+3. Clone project in WSL filesystem (`~/python-docker-template`)
+
+**Why WSL over native Windows?**
+- ✅ Native Make support (no additional installation needed)
+- ✅ Better Docker performance and file watching
+- ✅ Same commands as Linux/Mac documentation
+- ✅ Proper file permissions and line endings
+- ✅ Faster container startup and file operations
+
 ## 📋 Available Commands
 
 Run `make help` to see all available commands:

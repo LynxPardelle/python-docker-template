@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   python-app:
     build: .
@@ -11,7 +9,8 @@ services:
       - PYTHONUNBUFFERED=1
       - PYTHONDONTWRITEBYTECODE=1
     env_file:
-      - .env
+      - path: .env
+        required: false
     stdin_open: true
     tty: true
     restart: unless-stopped

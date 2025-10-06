@@ -16,12 +16,59 @@ Before you begin, make sure you have the following installed on your system:
    - Verify installation: `docker-compose --version`
 
 3. **Make** (for using the Makefile)
-   - **Windows**: Install via Chocolatey: `choco install make` or use Git Bash
-   - **Mac**: Install via Homebrew: `brew install make`
+   - **Windows** (recommended): Use WSL (Windows Subsystem for Linux) - see WSL setup below
+   - **Windows** (alternative): Install via Chocolatey: `choco install make` or use Git Bash
+   - **Mac**: Usually pre-installed, or `brew install make`
    - **Linux**: Usually pre-installed, or `sudo apt install make`
 
 4. **Git** (optional, for version control)
    - Download from: https://git-scm.com/downloads
+
+### WSL Setup for Windows (Recommended)
+
+For the best experience on Windows, we recommend using WSL (Windows Subsystem for Linux):
+
+1. **Install WSL2**:
+   ```bash
+   # Run in PowerShell as Administrator
+   wsl --install
+   ```
+
+2. **Install Ubuntu** (or your preferred Linux distribution):
+   ```bash
+   wsl --install -d Ubuntu
+   ```
+
+3. **Restart your computer** when prompted
+
+4. **Open WSL terminal** and install Docker:
+   ```bash
+   # Update package list
+   sudo apt update
+   
+   # Install Docker
+   curl -fsSL https://get.docker.com -o get-docker.sh
+   sudo sh get-docker.sh
+   
+   # Add your user to docker group
+   sudo usermod -aG docker $USER
+   ```
+
+5. **Install Docker Desktop** for Windows and enable WSL2 integration
+
+6. **Clone this repository in WSL**:
+   ```bash
+   cd ~
+   git clone <your-repo-url>
+   cd python-docker-template
+   ```
+
+**Why WSL?**
+- ✅ Native Linux environment with full Makefile support
+- ✅ Better Docker performance and compatibility
+- ✅ Same commands work as on Linux/Mac
+- ✅ No need to install Make separately
+- ✅ Better file permissions handling
 
 ### System Requirements
 - At least 2GB of free disk space

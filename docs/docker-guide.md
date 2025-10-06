@@ -24,6 +24,8 @@ Docker is a platform that packages applications and their dependencies into ligh
 - ✅ **Isolated dependencies** - No conflicts with your system
 - ✅ **Reproducible** - Works identically everywhere
 
+**💡 Windows Users**: For the best Docker experience on Windows, use WSL2 (Windows Subsystem for Linux). This provides native Linux compatibility and significantly better performance than Docker on native Windows.
+
 ## 🏗️ Docker Components in This Template
 
 ### 1. Docker Image

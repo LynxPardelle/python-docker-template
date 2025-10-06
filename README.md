@@ -17,7 +17,8 @@ A complete, beginner-friendly Python development environment using Docker. Perfe
 
 ### Prerequisites
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed
-- [Make](https://chocolatey.org/packages/make) installed (Windows: `choco install make`)
+- **Windows**: [WSL2](https://docs.microsoft.com/en-us/windows/wsl/install) (recommended) or [Make](https://chocolatey.org/packages/make)
+- **Mac/Linux**: Make (usually pre-installed)
 
 ### Get Started
 ```bash

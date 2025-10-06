@@ -11,6 +11,13 @@ Environment variables are key-value pairs that exist outside your code and can a
 - **Flexibility** - Changing behavior without modifying code
 - **Deployment** - Different settings for development, staging, and production
 
+## � Windows Users: Use WSL
+
+For the best experience on Windows, use WSL (Windows Subsystem for Linux):
+- Install WSL2: `wsl --install -d Ubuntu`
+- Run all commands in WSL terminal
+- Better Docker performance and native Make support
+
 ## 🚀 Quick Start
 
 ### 1. Create .env file

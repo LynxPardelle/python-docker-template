@@ -127,7 +127,16 @@ docker system df
 
 **Solutions**:
 
-**Windows**:
+**Windows (Recommended - WSL)**:
+```bash
+# Install WSL2 and Ubuntu
+wsl --install -d Ubuntu
+
+# Make is pre-installed in WSL Ubuntu
+# Just use WSL terminal for all commands
+```
+
+**Windows (Alternative)**:
 ```bash
 # Option 1: Chocolatey
 choco install make
