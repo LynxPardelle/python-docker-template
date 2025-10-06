@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  python-app:
+    build: .
+    container_name: python-learning
+    volumes:
+      - .:/app
+      - /app/__pycache__
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONDONTWRITEBYTECODE=1
+    env_file:
+      - .env
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+    command: tail -f /dev/null  # Keep container running for development

@@ -1,0 +1,15 @@
+# Basic Python libraries for beginners
+# Add any new libraries here and rebuild the container
+
+# For basic input/output and system operations (usually built-in, but good to know about)
+# datetime - for working with dates and times (built-in)
+# json - for working with JSON data (built-in)
+# random - for random number generation (built-in)
+
+# Popular external libraries for learning
+requests==2.31.0          # For making HTTP requests
+beautifulsoup4==4.12.2    # For web scraping
+matplotlib==3.8.0         # For creating plots and graphs
+numpy==1.25.2             # For numerical computing
+pandas==2.1.1             # For data manipulation and analysis
+python-dotenv==1.0.0      # For loading environment variables from .env files
